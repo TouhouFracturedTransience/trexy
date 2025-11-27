@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discord Official ID Lookup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="page-header">
+      <div class="page-title-row">
+        <span class="page-icon">🔍</span>
+        <h1 class="page-title"> Discord ID Lookup</h1>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="lookup-panel">
+        <label class="input-label" for="discord-id-input">
+          <span>User ID / Any ID:</span>
+          <a href="#" class="learn-more">Learn more</a>
+        </label>
+        <div class="input-row">
+          <input id="discord-id-input" type="text" placeholder="161549256014954497" />
+          <button id="lookup-btn">Lookup</button>
+        </div>
+        <p id="status" class="status"></p>
+      </section>
+
+      <section id="result" class="result-card hidden">
+        <div id="result-banner-wrap" class="banner-wrap hidden">
+          <a id="banner-link" href="#" target="_blank" rel="noopener noreferrer">
+            <img id="result-banner" alt="banner" />
+          </a>
+        </div>
+        <div class="result-inner">
+          <div class="avatar-column">
+            <div class="big-avatar-wrap">
+              <a id="avatar-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img id="result-avatar" class="big-avatar" alt="avatar" />
+              </a>
+            </div>
+          </div>
+          <div class="info-column">
+            <h2 id="result-tag" class="result-title">User</h2>
+            <div class="info-row"><span class="info-label">User ID:</span> <span id="result-id" class="info-value copyable" data-copy="id"></span></div>
+            <div class="info-row"><span class="info-label">Username:</span> <span id="result-username" class="info-value copyable" data-copy="username"></span></div>
+            <div class="info-row"><span class="info-label">Badges:</span> <span id="result-badges" class="info-value"></span></div>
+            <div class="info-row"><span class="info-label">Created:</span> <span id="result-created" class="info-value"></span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>Discord Official ID Lookup</span>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
